@@ -3,28 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Random Assistant API</title>
-  <script>
-    // Array of your 4 assistant IDs
-    const assistants = [
-      "asst_abc123",
-      "asst_def456",
-      "asst_ghi789",
-      "asst_jkl012"
-    ];
-
-    // Pick a random assistant
-    const selectedAssistant = assistants[Math.floor(Math.random() * assistants.length)];
-
-    // Output JSON
-    const jsonOutput = { selectedAssistant };
-
-    // Serve JSON by writing it to the document
-    document.body.innerText = JSON.stringify(jsonOutput);
-
-    // Optional: also log to console for testing
-    console.log(jsonOutput);
-  </script>
 </head>
 <body>
+<script>
+  const assistants = [
+    "asst_abc123",
+    "asst_def456",
+    "asst_ghi789",
+    "asst_jkl012"
+  ];
+
+  const selectedAssistant = assistants[Math.floor(Math.random() * assistants.length)];
+
+  const jsonOutput = { selectedAssistant };
+
+  // This will now work because body exists
+  document.body.innerText = JSON.stringify(jsonOutput);
+
+  console.log(jsonOutput);
+</script>
 </body>
 </html>
