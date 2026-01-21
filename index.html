@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Assistant</title>
+</head>
+<body>
+<h1>Your Random Assistant</h1>
+
+<script>
+  const assistants = [
+    "asst_abc123",
+    "asst_def456",
+    "asst_ghi789",
+    "asst_jkl012"
+  ];
+
+  // Pick a random assistant
+  const selectedAssistant = assistants[Math.floor(Math.random() * assistants.length)];
+
+  // Show it on the page
+  document.body.innerHTML += "<p>" + selectedAssistant + "</p>";
+
+  // Optional: output JSON for API use
+  console.log(JSON.stringify({ selectedAssistant }));
+</script>
+
+</body>
+</html>
