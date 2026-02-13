@@ -14,7 +14,7 @@ assistants = [
 @app.route("/random_assistant", methods=["GET"])
 def random_assistant():
     selected = random.choice(assistants)
-    return jsonify({"selectedAssistant": selected})
+    return jsonify({"assistantId": selected})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
