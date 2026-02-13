@@ -15,7 +15,7 @@
 
   const selectedAssistant = assistants[Math.floor(Math.random() * assistants.length)];
 
-  const jsonOutput = { selectedAssistant };
+  const jsonOutput = { assistantId };
 
   // This will now work because body exists
   document.body.innerText = JSON.stringify(jsonOutput);
