@@ -1,8 +1,9 @@
 export default function handler(req, res) {
   // Your real Assistant IDs from Vapi Dashboard
   const assistants = [
-    "b4ec1744-8452-46b7-8363-eca212dab119", 
-    "688d713a-dfdb-48d4-a425-6740361b650c",
+    "4dd28b83-2f6d-4e63-8472-a9fee28f9566", 
+    "bf751324-55aa-4240-8102-f42ba3d7ba63",
+    "ca90edd3-e650-477a-af86-ed68da65d681"
   ];
 
   const selectedId = assistants[Math.floor(Math.random() * assistants.length)];
